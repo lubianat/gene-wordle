@@ -9,9 +9,10 @@ type Props = {
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+      <p className="text-sm text-gray-500 dark:text-gray-300">Wordle but for genes!</p>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Use <a href="https://www.genenames.org/">genenames.org</a> to find suggestions.
-        Genes with less than 5 characters are extended with "-".
+        Use <a target="_blank"  rel="noreferrer" href="https://www.genenames.org/">genenames.org</a> to find suggestions.
+        </p><p className="text-sm text-gray-500 dark:text-gray-300">Genes with less than 5 characters are extended with "-". 
       </p>
       <div className="flex justify-center mb-1 mt-4">
       <Cell value="I" />
@@ -31,7 +32,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The symbols 3 and - are in the gene and in the correct spot.
+        The symbols 3 and - are in the gene name and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -48,7 +49,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
 
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The symbol P 3 is in the word but in the wrong spot.
+        The symbol P is in the gene name but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -59,7 +60,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="-" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The symbol N is not in the word in any spot.
+        The symbol N is not in the gene name in any spot.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">

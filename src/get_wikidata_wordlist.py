@@ -1,16 +1,22 @@
+
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 sparqlwd = SPARQLWrapper("https://query.wikidata.org/sparql")
 
 query = """
-SELECT ?gene_symbol ?sitelinks
+SELECT DISTINCT
+  ?item ?gene_symbol ?score
 WHERE 
 {
   ?item wdt:P353 ?gene_symbol .
-  ?item wikibase:sitelinks ?sitelinks .
+  ?item wdt:P688 ?protein . 
+  ?item wikibase:sitelinks ?sitelink_gene .
+  ?protein wikibase:sitelinks ?sitelink_protein .
+  BIND(2.5 * ?sitelink_gene + ?sitelink_protein as ?score)
 }
-ORDER BY DESC (?sitelinks)   
+ORDER BY 
+  DESC (?score)   
 """
 
 sparqlwd.setQuery(query)
