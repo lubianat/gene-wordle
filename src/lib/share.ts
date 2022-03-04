@@ -18,7 +18,7 @@ export const shareStatus = (
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
       generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
     +
-    '\n https://lubianat.github.io/gene-wordle'
+    `\n ${ WEBSITE }`
     )
 }
 
