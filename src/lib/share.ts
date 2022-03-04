@@ -1,6 +1,8 @@
 import { getGuessStatuses } from './statuses'
 import { solutionIndex } from './words'
 import { GAME_TITLE } from '../constants/strings'
+import { WEBSITE } from '../constants/strings'
+
 import { MAX_CHALLENGES } from '../constants/settings'
 
 export const shareStatus = (
@@ -11,11 +13,13 @@ export const shareStatus = (
   isHighContrastMode: boolean
 ) => {
   navigator.clipboard.writeText(
-    `${GAME_TITLE} ${solutionIndex} ${
+    `I've played ${GAME_TITLE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
       generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
-  )
+    +
+    '\n https://lubianat.github.io/gene-wordle'
+    )
 }
 
 export const generateEmojiGrid = (guesses: string[], tiles: string[]) => {
