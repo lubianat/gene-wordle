@@ -3,7 +3,7 @@ import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
-import { tomorrow } from '../../lib/words'
+import { tomorrow, solution } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
   STATISTICS_TITLE,
@@ -37,6 +37,7 @@ export const StatsModal = ({
   isDarkMode,
   isHighContrastMode,
 }: Props) => {
+  let gene_cards = `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${solution.replace("-", "")}`
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
@@ -55,8 +56,10 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       <StatBar gameStats={gameStats} />
+
+      <a target="_blank"  rel="noreferrer" href={gene_cards}> Today's answer on Gene Cards</a>
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-        {GUESS_DISTRIBUTION_TEXT}
+        {GUESS_DISTRIBUTION_TEXT} 
       </h4>
       <Histogram gameStats={gameStats} />
       {(isGameLost || isGameWon) && (
