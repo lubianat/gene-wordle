@@ -56,8 +56,7 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       <StatBar gameStats={gameStats} />
-
-      <a target="_blank"  rel="noreferrer" href={gene_cards}> Today's answer on Gene Cards</a>
+      <a className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 text-green-600 hover:text-yellow-600" target="_blank"  rel="noreferrer" href={gene_cards}> Read about today's gene on Gene Cards</a>
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT} 
       </h4>
