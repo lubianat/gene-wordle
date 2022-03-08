@@ -5,6 +5,7 @@ import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
 import { tomorrow, solution } from '../../lib/words'
 import { BaseModal } from './BaseModal'
+import wikipediaPages from '../../constants/wikipedialist.json'
 import {
   STATISTICS_TITLE,
   GUESS_DISTRIBUTION_TEXT,
@@ -37,10 +38,8 @@ export const StatsModal = ({
   isDarkMode,
   isHighContrastMode,
 }: Props) => {
-  let gene_cards = `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${solution.replace(
-    '-',
-    ''
-  )}`
+  let wikipediaPage = wikipediaPages[solution]
+
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
@@ -60,10 +59,10 @@ export const StatsModal = ({
     >
       <StatBar gameStats={gameStats} />
       <a
-        className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 text-green-600 hover:text-yellow-600"
+        className="focus:outline-none text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 text-green-600 hover:text-yellow-600"
         target="_blank"
         rel="noreferrer"
-        href={gene_cards}
+        href={wikipediaPage}
       >
         {' '}
         Read about the gene of the day
