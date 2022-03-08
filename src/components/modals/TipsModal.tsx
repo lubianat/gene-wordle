@@ -29,9 +29,7 @@ export const TipsModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title={TIPS_TITLE} isOpen={isOpen} handleClose={handleClose}>
       <br />
-      <br />
-      <p>The Gene of the Day {tip}</p>
-      <br />
+      <p>The gene of the day {tip}</p>
       <br />
       <a
         className="text-lg font-medium  dark:text-gray-100 text-green-600 hover:text-yellow-600"
@@ -53,7 +51,6 @@ export const TipsModal = ({ isOpen, handleClose }: Props) => {
         {' '}
         Read about the gene of the day on Gene Cards
       </a>
-      <br />
       <br />
     </BaseModal>
   )
