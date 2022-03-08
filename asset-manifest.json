@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/static/css/main.849c6e40.css",
-    "main.js": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/static/js/main.dd63f1d2.js",
-    "static/js/787.b3f9d252.chunk.js": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/static/js/787.b3f9d252.chunk.js",
-    "index.html": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/index.html",
-    "main.849c6e40.css.map": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/static/css/main.849c6e40.css.map",
-    "main.dd63f1d2.js.map": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/static/js/main.dd63f1d2.js.map",
-    "787.b3f9d252.chunk.js.map": "https://raw.githubusercontent.com/lubianat/gene-wordle/gh-pages/static/js/787.b3f9d252.chunk.js.map"
+    "main.css": "/static/css/main.849c6e40.css",
+    "main.js": "/static/js/main.49c29bc7.js",
+    "static/js/787.b3f9d252.chunk.js": "/static/js/787.b3f9d252.chunk.js",
+    "index.html": "/index.html",
+    "main.849c6e40.css.map": "/static/css/main.849c6e40.css.map",
+    "main.49c29bc7.js.map": "/static/js/main.49c29bc7.js.map",
+    "787.b3f9d252.chunk.js.map": "/static/js/787.b3f9d252.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.849c6e40.css",
-    "static/js/main.dd63f1d2.js"
+    "static/js/main.49c29bc7.js"
   ]
 }
