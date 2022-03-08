@@ -1,7 +1,7 @@
 {
   "name": "game",
   "version": "0.1.0",
-  "homepage": "https://geneofthe.day",
+  "homepage": "https://lubianat.github.io/gene-wordle/",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.2",
