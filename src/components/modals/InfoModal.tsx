@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Wordle but for genes!
+        Wordle but for human genes!
       </p>
       <p className="text-sm text-gray-500 dark:text-gray-300 focus:outline-none" >
         Use{' '}
