@@ -15,10 +15,7 @@ export const shareStatus = (
     `I've played ${WEBSITE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
-      generateEmojiGrid(
-        guesses,
-        getEmojiTiles(isDarkMode, isHighContrastMode)
-      )
+      generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
   )
 }
 

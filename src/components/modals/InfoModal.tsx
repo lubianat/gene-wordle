@@ -12,9 +12,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Wordle but for human genes!
       </p>
-      <p className="text-sm text-gray-500 dark:text-gray-300 focus:outline-none" >
+      <p className="text-sm text-gray-500 dark:text-gray-300 focus:outline-none">
         Use{' '}
-        <a className="text-sm text-blue-500 dark:text-blue-300" target="_blank" rel="noreferrer" href="https://www.genenames.org/">
+        <a
+          className="text-sm text-blue-500 dark:text-blue-300"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.genenames.org/"
+        >
           genenames.org
         </a>{' '}
         to find suggestions.
