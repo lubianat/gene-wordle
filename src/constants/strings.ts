@@ -1,5 +1,5 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
-export const WEBSITE = 'https://lubianat.github.io/gene-wordle'
+export const WEBSITE = 'geneofthe.day'
 
 export const WIN_MESSAGES = ['Great Job!', 'Awesome', 'Well done!']
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
@@ -16,6 +16,7 @@ export const NOT_CONTAINED_MESSAGE = (letter: string) =>
 export const ENTER_TEXT = 'Enter'
 export const DELETE_TEXT = 'Delete'
 export const STATISTICS_TITLE = 'Statistics'
+export const TIPS_TITLE = 'Tip'
 export const GUESS_DISTRIBUTION_TEXT = 'Guess Distribution'
 export const NEW_WORD_TEXT = 'New word in'
 export const SHARE_TEXT = 'Share'

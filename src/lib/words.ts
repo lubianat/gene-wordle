@@ -5,10 +5,7 @@ import { getGuessStatuses } from './statuses'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 
 export const isWordInWordList = (word: string) => {
-  return (
-    WORDS.includes(word) ||
-    VALID_GUESSES.includes(word)
-  )
+  return WORDS.includes(word) || VALID_GUESSES.includes(word)
 }
 
 export const isWinningWord = (word: string) => {

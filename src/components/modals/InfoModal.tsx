@@ -9,13 +9,21 @@ type Props = {
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500 dark:text-gray-300">Wordle but for genes!</p>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Use <a target="_blank"  rel="noreferrer" href="https://www.genenames.org/">genenames.org</a> to find suggestions.
-        </p><p className="text-sm text-gray-500 dark:text-gray-300">Genes with less than 5 characters are extended with "-". 
+        Wordle but for genes!
+      </p>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Use{' '}
+        <a target="_blank" rel="noreferrer" href="https://www.genenames.org/">
+          genenames.org
+        </a>{' '}
+        to find suggestions.
+      </p>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Genes with less than 5 characters are extended with "-".
       </p>
       <div className="flex justify-center mb-1 mt-4">
-      <Cell value="I" />
+        <Cell value="I" />
         <Cell value="N" />
         <Cell value="G" />
         <Cell
@@ -24,7 +32,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           value="3"
           status="correct"
         />
-               <Cell
+        <Cell
           isRevealing={true}
           isCompleted={true}
           value="-"
@@ -46,7 +54,6 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           status="present"
         />
         <Cell value="1" />
-
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The symbol P is in the gene name but in the wrong spot.
@@ -64,13 +71,12 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is a modification of an open source version of the word guessing game we all know and
-        love -{' '}
+        Check the open source code{' '}
         <a
           href="https://github.com/lubianat/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
+            here
         </a>{' '}
       </p>
     </BaseModal>

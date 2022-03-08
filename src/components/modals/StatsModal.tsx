@@ -37,7 +37,10 @@ export const StatsModal = ({
   isDarkMode,
   isHighContrastMode,
 }: Props) => {
-  let gene_cards = `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${solution.replace("-", "")}`
+  let gene_cards = `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${solution.replace(
+    '-',
+    ''
+  )}`
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
@@ -56,9 +59,19 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       <StatBar gameStats={gameStats} />
-      <a className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 text-green-600 hover:text-yellow-600" target="_blank"  rel="noreferrer" href={gene_cards}> Read about today's gene on Gene Cards</a>
+      <a
+        className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 text-green-600 hover:text-yellow-600"
+        target="_blank"
+        rel="noreferrer"
+        href={gene_cards}
+      >
+        {' '}
+        Read about the gene of the day
+      </a>
+      <br/>
+      <br/>
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-        {GUESS_DISTRIBUTION_TEXT} 
+        {GUESS_DISTRIBUTION_TEXT}
       </h4>
       <Histogram gameStats={gameStats} />
       {(isGameLost || isGameWon) && (
