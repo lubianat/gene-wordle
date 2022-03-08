@@ -76,7 +76,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           href="https://github.com/lubianat/react-wordle"
           className="underline font-bold"
         >
-            here
+          here
         </a>{' '}
       </p>
     </BaseModal>

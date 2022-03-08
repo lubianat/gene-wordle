@@ -68,8 +68,8 @@ export const StatsModal = ({
         {' '}
         Read about the gene of the day
       </a>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
       </h4>
