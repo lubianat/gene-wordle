@@ -31,6 +31,8 @@ export const TipsModal = ({ isOpen, handleClose }: Props) => {
       <br />
       <p>The gene of the day {tip}</p>
       <br />
+      <p className="text-lg font-large">Spoilers:</p>
+      <br />
       <a
         className="text-lg font-medium  dark:text-gray-100 text-green-600 hover:text-yellow-600"
         target="_blank"
