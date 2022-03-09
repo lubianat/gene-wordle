@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gene-wordle/static/css/main.849c6e40.css",
-    "main.js": "/gene-wordle/static/js/main.4d45d480.js",
+    "main.js": "/gene-wordle/static/js/main.5cfcdd73.js",
     "static/js/787.b3f9d252.chunk.js": "/gene-wordle/static/js/787.b3f9d252.chunk.js",
     "index.html": "/gene-wordle/index.html",
     "main.849c6e40.css.map": "/gene-wordle/static/css/main.849c6e40.css.map",
-    "main.4d45d480.js.map": "/gene-wordle/static/js/main.4d45d480.js.map",
+    "main.5cfcdd73.js.map": "/gene-wordle/static/js/main.5cfcdd73.js.map",
     "787.b3f9d252.chunk.js.map": "/gene-wordle/static/js/787.b3f9d252.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.849c6e40.css",
-    "static/js/main.4d45d480.js"
+    "static/js/main.5cfcdd73.js"
   ]
 }
