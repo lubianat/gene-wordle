@@ -47,5 +47,13 @@
   "EZR--": "encodes a protein called cytovillin, present in microvilli. ",
   "C3---": "encodes a complement protein.",
   "KEL--": "encodes the core protein of the Kell Cellano blood group system",
-  "CD5--": "is known for its ability to mark T cells, but with less sensitivity than CD3."
+  "CD5--": "is known for its ability to mark T cells, but with less sensitivity than CD3.",
+  "IL11-": "encodes a cytokine also known as 'adipogenesis inhibitory factor'.",
+  "DRD1-": "is expressed by neurons in the dorsal striatum.",
+  "IL22-": "is a member of the IL-10 superfamily.",
+  "APOB-": "encodes one major proteic component of chylomicrons. ",
+  "DRD2-": "encodes a receptor of several antipsychotic drugs. ",
+  "PRNP-": "is associated with the kuru neurodegenerative disease. ",
+  "IL2--": "is known for its role in the activation of lymphocytes.",
+  "POMC-": "encodes a protein that can be cleaved into multiple peptide hormones.",
 }
