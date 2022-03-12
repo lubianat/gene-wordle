@@ -18,7 +18,7 @@ type Props = {
 }
 
 export const TipsModal = ({ isOpen, handleClose }: Props) => {
-  let gene_cards = `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${solution.replace(
+  let gene_cards = `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${solution.replaceAll(
     '-',
     ''
   )}`
