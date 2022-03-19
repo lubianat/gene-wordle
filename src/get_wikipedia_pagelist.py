@@ -2,7 +2,9 @@
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-sparqlwd = SPARQLWrapper("https://query.wikidata.org/sparql")
+user_agent = "gene-wordle (https://github.com/lubianat/gene-wordle)"
+
+sparqlwd = SPARQLWrapper("https://query.wikidata.org/sparql", agent=user_agent)
 
 query = """
 SELECT DISTINCT
