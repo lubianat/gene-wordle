@@ -80,9 +80,6 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="flex justify-center mb-1">
-      <Key width={65.4} value="SHIFT" onClick={onClick}>
-          Shift
-        </Key>
         {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
           <Key
             value={key}
