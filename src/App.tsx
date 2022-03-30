@@ -186,6 +186,10 @@ function App() {
     )
   }
 
+  const onShift = () => {
+    return
+  }
+
   const onEnter = () => {
     if (isGameWon || isGameLost) {
       return
@@ -280,6 +284,7 @@ function App() {
       />
       <Keyboard
         onChar={onChar}
+        onShift={onShift}
         onDelete={onDelete}
         onEnter={onEnter}
         guesses={guesses}

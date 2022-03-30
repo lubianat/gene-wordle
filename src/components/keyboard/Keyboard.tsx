@@ -8,6 +8,7 @@ type Props = {
   onChar: (value: string) => void
   onDelete: () => void
   onEnter: () => void
+  onShift: () => void
   guesses: string[]
   isRevealing?: boolean
 }
@@ -15,6 +16,7 @@ type Props = {
 export const Keyboard = ({
   onChar,
   onDelete,
+  onShift,
   onEnter,
   guesses,
   isRevealing,
@@ -26,6 +28,8 @@ export const Keyboard = ({
       onEnter()
     } else if (value === 'DELETE') {
       onDelete()
+    } else if (value === 'SHIFT'){
+      onShift()
     } else {
       onChar(value)
     }
@@ -37,6 +41,8 @@ export const Keyboard = ({
         onEnter()
       } else if (e.code === 'Backspace') {
         onDelete()
+      } else if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
+        onShift()
       } else {
         const key = localeAwareUpperCase(e.key)
         // TODO: check this test if the range works with non-english letters
@@ -47,7 +53,7 @@ export const Keyboard = ({
     return () => {
       window.removeEventListener('keyup', listener)
     }
-  }, [onEnter, onDelete, onChar])
+  }, [onShift, onEnter, onDelete, onChar])
 
   return (
     <div>
@@ -74,6 +80,9 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="flex justify-center mb-1">
+      <Key width={65.4} value="SHIFT" onClick={onClick}>
+          Shift
+        </Key>
         {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
           <Key
             value={key}

@@ -55,5 +55,8 @@
   "DRD2-": "encodes a receptor of several antipsychotic drugs. ",
   "PRNP-": "is associated with the kuru neurodegenerative disease. ",
   "IL2--": "is known for its role in the activation of lymphocytes.",
-  "POMC-": "encodes a protein that can be cleaved into multiple peptide hormones."
+  "POMC-": "encodes a protein that can be cleaved into multiple peptide hormones.",
+  "GPT--": "encodes a transaminase that plays a role in gluconeogenesis.",
+  "CBLIF": "is important for the absorption of vitamin B12.",
+  "APOA2": "encodes an abundant protein in high-dentisity lipoprotein particles."
 }
