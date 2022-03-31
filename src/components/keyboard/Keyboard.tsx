@@ -28,7 +28,7 @@ export const Keyboard = ({
       onEnter()
     } else if (value === 'DELETE') {
       onDelete()
-    } else if (value === 'SHIFT'){
+    } else if (value === 'SHIFT') {
       onShift()
     } else {
       onChar(value)
